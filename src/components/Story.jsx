@@ -69,9 +69,9 @@ const Story = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: index * 0.2 }}
-                        className={`flex items-center justify-between mb-12 w-full ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                        className={`flex items-center justify-between mb-12 w-full flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                     >
-                        <div className="w-5/12 pl-4 pr-4">
+                        <div className="w-full md:w-5/12 pl-4 pr-4 order-2 md:order-none">
                             <div className={`p-6 rounded-2xl shadow-lg bg-white border-b-4 hover:scale-105 transition-transform duration-300 ${event.color.replace('bg-', 'border-')}`}>
                                 <h3 className="text-xl font-bold text-gray-800 mb-1">{event.title}</h3>
                                 <p className="text-sm font-semibold text-pink-500 mb-2">{event.subtitle}</p>
@@ -84,13 +84,13 @@ const Story = () => {
                             </div>
                         </div>
 
-                        <div className="w-2/12 flex justify-center relative z-10">
-                            <div className={`w-12 h-12 rounded-full flex items-center justify-center shadow-md ${event.color} border-4 border-white`}>
+                        <div className="w-full md:w-2/12 flex justify-center relative z-10 order-1 md:order-none mb-6 md:mb-0">
+                            <div className={`w-16 h-16 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md ${event.color} border-4 border-white`}>
                                 {event.icon}
                             </div>
                         </div>
 
-                        <div className="w-5/12 pl-4 pr-4" />
+                        <div className="hidden md:block w-5/12 pl-4 pr-4" />
                     </motion.div>
                 ))}
             </div>

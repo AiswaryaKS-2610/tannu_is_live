@@ -55,7 +55,7 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
-                    className="text-7xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-cursive leading-tight"
+                    className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-cursive leading-tight"
                 >
                     Tannu <span className="inline-block animate-pulse">❤️</span>
                 </motion.h1>
