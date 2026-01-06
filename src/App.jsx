@@ -15,7 +15,7 @@ function App() {
             <Gallery />
 
             <footer className="bg-pink-100 py-8 text-center text-pink-600">
-                <p className="font-medium text-lg">Made with ❤️ by Aishu </p>
+                <p className="font-medium text-lg">Made with ❤️ by Aishu and Akshu</p>
                 <p className="text-sm mt-2 font-light">For our bestie Tannu</p>
             </footer>
         </div>
